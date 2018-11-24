@@ -17,4 +17,6 @@ target 'Flix' do
     # Pods for testing
   end
 
+  pod 'AlamofireImage'
+
 end
