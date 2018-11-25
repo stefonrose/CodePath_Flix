@@ -74,10 +74,19 @@
                     <navigationItem key="navigationItem" title="myFlix" id="ZDh-Re-AXm"/>
                     <connections>
                         <outlet property="activityIndicator" destination="bjj-n0-BI4" id="IB0-sQ-73w"/>
+                        <outlet property="searchDisplayController" destination="4rq-bk-FKi" id="epw-ns-bdY"/>
                         <outlet property="tableView" destination="oic-Mi-oaj" id="KOe-nD-zIe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="4rq-bk-FKi">
+                    <connections>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="Sc7-0G-ger"/>
+                        <outlet property="searchContentsController" destination="BYZ-38-t0r" id="MgI-3z-bDU"/>
+                        <outlet property="searchResultsDataSource" destination="BYZ-38-t0r" id="dsS-aX-Ig6"/>
+                        <outlet property="searchResultsDelegate" destination="BYZ-38-t0r" id="joV-F0-pl6"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="1096.8" y="26.53673163418291"/>
         </scene>

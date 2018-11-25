@@ -7,15 +7,27 @@
 //
 
 import UIKit
+import Alamofire
 import AlamofireImage
 
 class NowPlayingViewController: UIViewController, UITableViewDataSource {
-
+    
+    
+    
+    
+    
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     var movies: [[String: Any]] = []
+    
     var refreshControl: UIRefreshControl!
+    
+    let alertController = UIAlertController(title: "Cannot Load Movies", message: "Your device is not connected to the internet.", preferredStyle: .alert)
+    
+    var isConnectedToInternet:Bool {
+        return NetworkReachabilityManager()!.isReachable
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,13 +38,20 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource {
         tableView.rowHeight = 210
         activityIndicator.startAnimating()
         fetchMovies()
-
+        
+        
+        let tryAgainAction = UIAlertAction(title: "Try Again", style: .default) { (action) in
+            self.fetchMovies()
+        }
+        alertController.addAction(tryAgainAction)
         
     }
     
     @objc func didPullToRefresh(_ refreshControl: UIRefreshControl) {
         fetchMovies()
     }
+    
+    
     
     func fetchMovies() {
         
@@ -46,6 +65,8 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource {
             //This will run when the network request returns.
             if let error = error {
                 print(error.localizedDescription)
+                self.present(self.alertController, animated: true)
+                
             } else if let data = data {
                 let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
                 let movies = dataDictionary["results"] as! [[String: Any]]
@@ -56,7 +77,6 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource {
                 
             }
         }
-        //activityIndicator.stopAnimating()
         task.resume()
     }
     
@@ -72,14 +92,20 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource {
         let overview = movie["overview"] as! String
         let posterPathString = movie["poster_path"] as! String
         let baseURLString = "https://image.tmdb.org/t/p/w500"
-        
         let posterURL = URL(string: baseURLString + posterPathString)!
+        
+//        cell.selectionStyle = .none
+        
+        let backgroundView = UIView()
+        backgroundView.backgroundColor = _ColorLiteralType(red: 0.9304299355, green: 0.3645707369, blue: 0.3275436163, alpha: 1)
+        cell.selectedBackgroundView = backgroundView
         
         cell.titleLabel.text = title
         cell.overviewLabel.text = overview
-        cell.posterImageView.af_setImage(withURL: posterURL)
+        cell.posterImageView.af_setImage(withURL: posterURL, placeholderImage: UIImage(named: "plaeholder"))
         
         return cell
     }
-
+    
 }
+
