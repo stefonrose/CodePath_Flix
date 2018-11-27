@@ -2,7 +2,7 @@
 
 Flix is a movies app using the [The Movie Database API](http://docs.themoviedb.apiary.io/#).
 
-Time spent: 8 hours spent in total
+Time spent: **8** hours spent in total
 
 ## User Stories
 
@@ -27,8 +27,38 @@ Here's a walkthrough of implemented user stories:
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
+# Project 2 - Flix
+
+Flix is a movies app displaying box office and top rental DVDs using [The Movie Database API](http://docs.themoviedb.apiary.io/#).
+
+Time spent: **WIP** hours spent in total
+
+## User Stories
+
+The following user stories are complete:
+
+- [x] User can tap a cell to see a detail view
+- [x] User can tap a tab bar button to view a grid layout of Movie Posters using a CollectionView
+
+- [x] User can tap a poster in the collection view to see a detail screen of that movie
+- [x] In the detail view, when the user taps the trailer button, a web view is presented modally where they can view the trailer
+- [x] In the web veiw, the user can swipe down to dismiss the view
+- [x] In the detail view, when the user taps the poster, the image becomes fullscreen
+- [x] Customize the navigation bar
+- [x] For small screen devices, if the overview is too long to fit on the screen, the user can scroll to see the rest
+
+
+## Video Walkthrough
+
+Here's a walkthrough of implemented user stories:
+
+![Video Walkthrough](https://i.imgur.com/bdTH7gb.gif)
+
+GIF created with [LiceCap](http://www.cockos.com/licecap/).
+
 ## Notes
 
+Describe any challenges encountered while building the app.
 
 ## License
 

@@ -18,33 +18,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="logo-250" translatesAutoresizingMaskIntoConstraints="NO" id="xjb-6T-zTR">
-                                <rect key="frame" x="78" y="237" width="219" height="213"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flix" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SRK-HP-jAo">
-                                <rect key="frame" x="161" y="448" width="52" height="48"/>
-                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="40"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Flix" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l6I-Bn-WK5">
+                                <rect key="frame" x="162" y="466" width="50" height="48"/>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="40"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="flix-icon-1x" translatesAutoresizingMaskIntoConstraints="NO" id="A4Y-bU-6Vc">
+                                <rect key="frame" x="62" y="208" width="250" height="250"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <constraints>
-                            <constraint firstItem="xjb-6T-zTR" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="6Cj-tQ-8Pq"/>
-                            <constraint firstItem="SRK-HP-jAo" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ahr-zm-dEM"/>
-                            <constraint firstItem="xjb-6T-zTR" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="tva-Wn-7dR"/>
-                            <constraint firstItem="SRK-HP-jAo" firstAttribute="top" secondItem="xjb-6T-zTR" secondAttribute="bottom" constant="-2" id="ySu-tL-1WG"/>
+                            <constraint firstItem="l6I-Bn-WK5" firstAttribute="top" secondItem="A4Y-bU-6Vc" secondAttribute="bottom" constant="8" id="0Pa-a6-o3k"/>
+                            <constraint firstItem="A4Y-bU-6Vc" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="LjY-Q7-ZpK"/>
+                            <constraint firstItem="A4Y-bU-6Vc" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="myM-7B-uc1"/>
+                            <constraint firstItem="l6I-Bn-WK5" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="qdO-w1-3Cw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
     <resources>
-        <image name="logo-250" width="219" height="213"/>
+        <image name="flix-icon-1x" width="500" height="500"/>
     </resources>
 </document>

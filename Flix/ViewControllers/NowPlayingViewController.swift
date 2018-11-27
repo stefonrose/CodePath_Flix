@@ -94,7 +94,7 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource {
         let baseURLString = "https://image.tmdb.org/t/p/w500"
         let posterURL = URL(string: baseURLString + posterPathString)!
         
-//        cell.selectionStyle = .none
+        //        cell.selectionStyle = .none
         
         let backgroundView = UIView()
         backgroundView.backgroundColor = _ColorLiteralType(red: 0.9304299355, green: 0.3645707369, blue: 0.3275436163, alpha: 1)
@@ -107,5 +107,13 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource {
         return cell
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let cell = sender as! UITableViewCell
+        if let indexPath = tableView.indexPath(for: cell) {
+            let movie = movies[indexPath.row]
+            let detailViewController = segue.destination as! DetailsViewController
+            detailViewController.movie = movie
+        }
+    }
 }
 
