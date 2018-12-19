@@ -35,7 +35,6 @@ class DetailsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        scrollView.contentLayoutGuide.bottomAnchor.constraint(equalTo: overviewLabel.bottomAnchor).isActive = true
 
         if let movie = movie {
             let idNumber = movie["id"] as! NSNumber
@@ -59,7 +58,7 @@ class DetailsViewController: UIViewController {
         posterImageView.addGestureRecognizer(pictureTap)
         posterImageView.isUserInteractionEnabled = true
         overviewLabel.sizeToFit()
-        scrollView.contentLayoutGuide.bottomAnchor.constraint(equalTo: overviewLabel.bottomAnchor).isActive = true
+        
         fetchVideoLink()
     }
     
