@@ -12,10 +12,8 @@ import WebKit
 class TrailerViewController: UIViewController {
 
     @IBOutlet weak var trailerWebView: WKWebView!
-    
-    
+
     var youtubeURL: URL?
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()

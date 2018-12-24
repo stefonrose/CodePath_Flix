@@ -12,9 +12,8 @@ The following user stories are complete:
 - [x] User can scroll through a list of movies currently playing in theaters from The Movie DB API
 - [x] User can "Pull to refresh" the movie list
 - [x] User sees a loading state while waiting for the movies to load
-
 - [x] User sees an alert when there's a networking error
-- [ ] User can search for a movie
+- [x] User can search for a movie
 - [x] While poster is being fetched, user see's a placeholder image
 - [x] Customize the selection effect of the cell
 
@@ -39,7 +38,6 @@ The following user stories are complete:
 
 - [x] User can tap a cell to see a detail view
 - [x] User can tap a tab bar button to view a grid layout of Movie Posters using a CollectionView
-
 - [x] User can tap a poster in the collection view to see a detail screen of that movie
 - [x] In the detail view, when the user taps the trailer button, a web view is presented modally where they can view the trailer
 - [x] In the web veiw, the user can swipe down to dismiss the view
@@ -59,6 +57,21 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 ## Notes
 
 Describe any challenges encountered while building the app.
+
+# Lab 5 - *Flix*
+
+**Name of your app** is a movies app displaying box office and top rental DVDs using [The Movie Database API](http://docs.themoviedb.apiary.io/#).
+
+Time spent: **3** hours spent in total
+
+## User Stories
+
+The following user stories are complete:
+
+- [x] Create a movie model
+- [x] Implement the movie model
+- [x] Implement property observers
+- [x] Create a basic API Client
 
 ## License
 
