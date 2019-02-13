@@ -1,4 +1,4 @@
-# Project 1 - Flix
+# Project 1 - *Flix*
 
 Flix is a movies app using the [The Movie Database API](http://docs.themoviedb.apiary.io/#).
 
@@ -26,11 +26,11 @@ Here's a walkthrough of implemented user stories:
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
-# Project 2 - Flix
+# Project 2 - *Flix*
 
 Flix is a movies app displaying box office and top rental DVDs using [The Movie Database API](http://docs.themoviedb.apiary.io/#).
 
-Time spent: **WIP** hours spent in total
+Time spent: **5** hours spent in total
 
 ## User Stories
 
@@ -57,6 +57,37 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 ## Notes
 
 Describe any challenges encountered while building the app.
+
+# Lab 3 - *Flix*
+
+**Name of your app** is a movies app displaying box office and top rental DVDs using [The Movie Database API](http://docs.themoviedb.apiary.io/#).
+
+Time spent: **5** hours spent in total
+
+## User Stories
+
+The following **required** user stories are complete:
+
+- The following screens use AutoLayout to adapt to various orientations and screen sizes
+- [x] Movie feed view (+3pt)
+- [x] Detail view (+2pt)
+
+The following **stretch** user stories are implemented:
+
+- [x] Dynamic Height Cells (+1)
+- [ ] Collection View AutoLayout (+2)
+
+The following **additional** user stories are implemented:
+
+- [ ] List anything else that you can get done to improve the app functionality! (+1-3pts)
+
+
+## Video Walkthrough
+
+![Video Walkthrough](https://i.imgur.com/cEuecdr.gif)
+
+GIF created with [LiceCap](http://www.cockos.com/licecap/).
+
 
 # Lab 5 - *Flix*
 
